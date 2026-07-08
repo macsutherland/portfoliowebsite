@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mac Sutherland | Digital Marketing & Social Media Manager</title>
+  <meta name="description" content="Mac Sutherland is a digital marketing and content manager helping water and action sports brands grow through paid and organic social, content strategy and campaign management." />
+
+  <!-- Fonts: Inter (clean modern sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- faint scroll-progress accent -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">Mac Sutherland<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#elements">Elements</a>
+      <a href="#services">Services</a>
+      <a href="#content">Content</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav__cta">Let's talk</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <main id="top">
+  <section class="hero">
+    <div class="hero__glow"></div>
+    <!-- Animated layered wave field -->
+    <div class="hero__waves" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="w1" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#1B4B66" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#0C2E42" stop-opacity="0.9"/>
+          </linearGradient>
+          <linearGradient id="w2" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#2A8FA3" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#0E0F11" stop-opacity="0.0"/>
+          </linearGradient>
+        </defs>
+        <path class="wave wave--back" fill="url(#w2)" d="M0,192 C240,120 480,260 720,200 C960,140 1200,240 1440,180 L1440,320 L0,320 Z"></path>
+        <path class="wave wave--front" fill="url(#w1)" d="M0,224 C220,288 520,170 760,232 C1000,294 1220,210 1440,250 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+
+    <div class="wrap">
+      <span class="hero__kicker eyebrow"><span class="dot"></span> Digital Marketing · Content · Social</span>
+      <h1>Helping <span class="accent">water &amp; action-sports</span> brands make a wake.</h1>
+      <p class="hero__sub">I'm Mac Sutherland, a digital marketing and content manager with 5+ years spent growing audiences, building brand awareness and driving real commercial results across water sports, sport technology and purpose-led organisations.</p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--primary">View the work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Start a project</a>
+      </div>
+    </div>
+
+    <a href="#stats" class="scrollcue" aria-label="Scroll down">
+      <span class="mouse"></span> Scroll
+    </a>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats" id="stats">
+    <div class="wrap">
+      <div class="stats__grid">
+        <div class="stat"><div class="num" data-to="5" data-suffix="+ yrs">5<span>+ yrs</span></div><div class="lbl">Across water sport &amp; tech</div></div>
+        <div class="stat"><div class="num" data-to="225" data-prefix="+" data-suffix="%">+225<span>%</span></div><div class="lbl">Peak follower growth</div></div>
+        <div class="stat"><div class="num" data-to="310" data-prefix="£" data-suffix="K"><span>£</span>310<span>K</span></div><div class="lbl">Incremental revenue driven</div></div>
+        <div class="stat"><div class="num" data-to="8" data-suffix="+">8<span>+</span></div><div class="lbl">Int'l events led on-site</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORK ===================== -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Campaigns built for the water.</h2>
+        <p>Real work for brands and organisations across the water. Hover a tile for the headline metric, or click any image for the full case study and content gallery.</p>
+      </div>
+
+      <!-- Masonry grid - tiles are populated/enhanced from script.js -->
+      <div class="work__grid" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ELEMENTS / PALETTE ===================== -->
+  <section class="section" id="elements">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Brand Identity</span>
+        <h2>Three elements, one current.</h2>
+        <p>The visual system pulls straight from the ocean: spray, depth and low golden light. A mood board you can lift right into decks and content.</p>
+      </div>
+      <div class="palette__grid">
+        <article class="swatch reveal">
+          <div class="swatch__chip" style="background:linear-gradient(160deg,#E8F1F2,#5FC9D8 55%,#2A8FA3)"></div>
+          <div class="swatch__body">
+            <div class="swatch__name">Surf</div>
+            <div class="swatch__hex"><code>#E8F1F2</code><code>#5FC9D8</code><code>#2A8FA3</code></div>
+          </div>
+        </article>
+        <article class="swatch reveal">
+          <div class="swatch__chip" style="background:linear-gradient(160deg,#2A8FA3,#1B4B66 55%,#0C2E42)"></div>
+          <div class="swatch__body">
+            <div class="swatch__name">Depth</div>
+            <div class="swatch__hex"><code>#2A8FA3</code><code>#1B4B66</code><code>#0C2E42</code></div>
+          </div>
+        </article>
+        <article class="swatch reveal">
+          <div class="swatch__chip" style="background:linear-gradient(160deg,#F4D9A8,#E9A14B 55%,#C9742B)"></div>
+          <div class="swatch__body">
+            <div class="swatch__name">Sunline</div>
+            <div class="swatch__hex"><code>#F4D9A8</code><code>#E9A14B</code><code>#C9742B</code></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What I Do</span>
+        <h2>Full-funnel, end to end.</h2>
+        <p>From the first content pillar to the final performance report: strategy, creative and the numbers that prove it worked.</p>
+      </div>
+      <div class="svc__grid" id="svcGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTENT SAMPLES (real posts carousel) ===================== -->
+  <section class="section" id="content">
+    <div class="wrap">
+      <div class="section-head reveal carousel__head">
+        <div>
+          <span class="eyebrow">Top-Performing Posts</span>
+          <h2>Built for the feed.</h2>
+          <p>A selection of real, high-performing posts I created and managed. Scroll through, or tap any card to open it on Instagram.</p>
+        </div>
+        <div class="carousel__btns">
+          <button class="carousel__btn" id="postsPrev" aria-label="Previous posts"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="carousel__btn" id="postsNext" aria-label="Next posts"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel" id="postsCarousel">
+      <div class="carousel__track" id="postsTrack"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="wrap about">
+      <div class="about__grid">
+        <div class="about__photo reveal">
+          <img src="assets/img/about-portrait.jpg" alt="Mac Sutherland" loading="lazy" />
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">About</span>
+          <h2 style="margin-top:14px;">Marketing that holds its line.</h2>
+          <p>I'm a digital marketing and content manager with 5+ years growing brands that live where the land meets the sea, from <strong>North Kiteboarding</strong> and <strong>North Foils</strong> to <strong>The Surfr App</strong>, <strong>Surf Life Saving New Zealand</strong> and the <strong>Bike Storage Company</strong>. I've captured content for Red Bull King of the Air, Red Bull Megaloop and the Cold Hawaii PWA World Cup, and I hold a BCom in Marketing and International Business from the University of Auckland.</p>
+          <p>My approach blends sharp performance marketing with content that genuinely belongs in the culture: multi-channel social, paid and organic strategy, copywriting and GA4-led reporting. The data tells me what to do more of, and knowing the sport tells me how to make it land.</p>
+          <div class="tools">
+            <span>Meta Ads</span><span>Google Ads</span><span>LinkedIn Ads</span>
+            <span>GA4</span><span>SEMrush / SEO</span><span>WordPress CMS</span>
+            <span>Email / EDMs</span><span>Adobe CC</span><span>Photo &amp; Video</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 style="margin-top:14px;">Let's make<br/>a wake.</h2>
+          <p class="contact__lead">Got a brand that needs to grow, or a role that needs filling? Tell me about it.</p>
+          <div class="contact__links">
+            <a href="mailto:mack.james.sutherland@gmail.com"><span class="k">Email</span> mack.james.sutherland@gmail.com</a>
+            <a href="tel:+64226965524"><span class="k">Phone</span> +64 22 696 5524</a>
+            <a href="https://linkedin.com/in/maccormick-sutherland" target="_blank" rel="noopener"><span class="k">LinkedIn</span> /in/maccormick-sutherland</a>
+          </div>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@brand.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Project</label>
+            <textarea id="message" name="message" placeholder="What are you working on?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="justify-content:center;">Send message</button>
+          <p class="form__note" id="formNote">This demo form doesn't send yet. Connect it to Formspree, Netlify Forms or your inbox to go live.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <span>© <span id="year"></span> Mac Sutherland. Digital Marketing &amp; Social</span>
+      <span>Designed &amp; built for the water.</span>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="totop" id="toTop" aria-label="Back to top">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    Back to top
+  </button>
+
+  <!-- ===================== CASE STUDY MODAL ===================== -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__scrim" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal__hero" id="mHero"><span class="badge" id="mBadge"></span></div>
+      <div class="modal__body">
+        <div class="role" id="mRole"></div>
+        <h3 id="mTitle"></h3>
+        <div class="modal__metrics" id="mMetrics"></div>
+        <div class="modal__block"><h4>The Challenge</h4><p id="mChallenge"></p></div>
+        <div class="modal__block"><h4>What I Did</h4><p id="mWork"></p></div>
+        <div class="modal__block">
+          <div id="mGallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lb__close" data-lb-close aria-label="Close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lb__nav lb__prev" data-lb-prev aria-label="Previous">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <div class="lb__stage" id="lbStage"></div>
+    <button class="lb__nav lb__next" data-lb-next aria-label="Next">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+    <div class="lb__count" id="lbCount"></div>
+  </div>
+
+  <script src="assets/media-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

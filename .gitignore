@@ -1,0 +1,11 @@
+# OS / editor
+.DS_Store
+**/.DS_Store
+.claude/
+
+# build artifact (duplicate of the site; not needed in the repo)
+deploy/
+
+# misc
+node_modules/
+*.zip
